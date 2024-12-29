@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Association Jil Alghad</title>
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Jil Alghad">
+                <a href="page_de_garde.html">Jil Alghad</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="page de garde.html">Accueil</a></li>
+                    <li><a href="Nos axes.html">Nos Axes</a></li>
+                    <li><a href="Actualités.html">Actualités</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="toggle-lang">العربية</button>
+        </div>
+    </header>
+    <main class="registration-page">
+        <h1>Inscription à l'événement</h1>
+        <form action="submit_registration.php" method="POST">
+            <label for="event-name">Nom de l'événement :</label>
+            <input type="text" id="event-name" name="event-name" readonly value="">
+
+            <label for="name">Nom complet :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit" class="submit-button">S'inscrire</button>
+        </form>
+    </main>
+
+    <script>
+        // Remplir automatiquement le nom de l'événement
+        const urlParams = new URLSearchParams(window.location.search);
+        const eventName = urlParams.get('event');
+        document.getElementById('event-name').value = eventName;
+    </script>
+</body>
+</html>

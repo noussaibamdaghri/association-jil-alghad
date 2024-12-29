@@ -1,0 +1,204 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('5.JPG'); 
+    background-size: cover; 
+    background-position: top; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%; 
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 12px 10px;
+    color: #fff; /* Texte blanc */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Lien "Jil Alghad" */
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.logo a:hover {
+    border-bottom: 2px solid #ffecb3;
+    font-size: 1.8em;
+}
+
+/* Style de la navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ffecb3; 
+    text-decoration: underline;
+}
+
+/* Style du bouton de langue */
+#toggle-lang {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#toggle-lang:hover {
+    text-decoration: underline;
+    font-size: 1.3em; 
+}
+
+/* Section Contact */
+.contact-section {
+    padding: 100px 20px 50px;
+    
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.9); /* Fond semi-transparent */ ;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   margin-top: 100px;
+    
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    color: #007bff; /* Bleu ciel foncé */
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Formulaire de contact */
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #e6f7ff; /* Fond bleu ciel clair */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    width: 95%;
+    padding: 10px;
+    background-color: #007bff; /* Bleu ciel foncé */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Bleu foncé au survol */
+}
+
+/* Informations de contact */
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    color: #007bff; /* Bleu ciel foncé */
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-info .social-links a img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-info .social-links a img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    
+    color: white;
+    position: relative;
+    margin-top: 20px;
+}
+
+

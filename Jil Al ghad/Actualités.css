@@ -1,0 +1,274 @@
+/* Style global */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('5.JPG'); 
+    background-size: cover; 
+    background-position: top; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%; 
+    background-attachment: fixed; /* Fixe l'image de fond */
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    padding: 12px 10px;
+    color: #fff; /* Texte blanc pour un bon contraste */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Ajustez la taille de l'image */
+    height: auto;
+    margin-right: 10px; /* Espacement entre l'image et le texte */
+}
+
+/* Lien "Jil Alghad" */
+.logo a {
+    text-decoration: none;
+    color: white; /* Texte en blanc */
+    font-size: 1.5em; /* Taille initiale */
+    padding-bottom: 5px; /* Espacement pour la bordure */
+    display: inline-block; /* Pour appliquer le style de bordure */
+    transition: all 0.3s ease; /* Transition pour l'effet hover */
+}
+
+/* Effet hover sur le lien "Jil Alghad" */
+.logo a:hover {
+    border-bottom: 2px solid #ffecb3; /* Bordure jaune sous le texte */
+    font-size: 1.8em; /* Augmente la taille du texte */
+}
+
+/* Style de la navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ffecb3; /* Couleur du texte au survol */
+    text-decoration: underline;
+}
+
+/* Style du bouton de langue */
+#toggle-lang {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#toggle-lang:hover {
+    text-decoration: underline;
+    font-size: 1.3em; /* Agrandit la taille du texte au survol */
+}
+
+/* Style pour la section des actualités */
+.news-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    padding: 30px;
+    margin: 120px auto 50px auto; /* Marge supérieure ajustée pour laisser de l'espace sous la barre de navigation */
+    max-width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Titre principal de l'actualité */
+.news-section h1 {
+    font-size: 2.5em;
+    color: #2d3a3a;
+    margin-bottom: 20px;
+}
+
+/* Paragraphe de description */
+.news-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Galerie de photos */
+.gallery h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    color: #2d3a3a;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.photo-container img {
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.photo-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Vidéo */
+.video-container {
+    margin-top: 30px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* Style pour le pied de page (si nécessaire) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d3a3a;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Conteneur du carrousel */
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrousel */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Images du carrousel */
+.carousel img {
+    min-width: 100%;
+    border-radius: 10px;
+}
+
+/* Boutons précédent et suivant */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.register-button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #c70039;
+}
+
+.event-actions {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Conteneur pour le titre et le bouton */
+.title-with-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajoute un espacement entre le titre et le bouton */
+    margin-bottom: 20px;
+}
+
+/* Titre principal */
+.title-with-button h1 {
+    font-size: 2.5em;
+    color: #2d3a3a;
+    margin: 0;
+}
+
+/* Bouton d'inscription */
+.register-button {
+    background-color: #2d3a3a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px; /* Espacement entre le titre et le bouton */
+}
+
+.register-button:hover {
+    background-color: #ffecb3;
+    color: #2d3a3a;
+}

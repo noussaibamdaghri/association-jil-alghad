@@ -1,0 +1,213 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('5.JPG'); 
+    background-size: cover; 
+    background-position: top; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%; 
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 12px 10px;
+    color: #fff; /* Texte blanc */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Lien "Jil Alghad" */
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.logo a:hover {
+    border-bottom: 2px solid #ffecb3;
+    font-size: 1.8em;
+}
+
+/* Style de la navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ffecb3; 
+    text-decoration: underline;
+}
+
+/* Style du bouton de langue */
+#toggle-lang {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#toggle-lang:hover {
+    text-decoration: underline;
+    font-size: 1.3em; 
+}
+
+/* Section Nos Axes */
+#features {
+    padding: 100px 20px 50px;
+    
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.9); /* Fond semi-transparent */ ;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#features h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #0078D7;
+}
+
+/* Grille des axes */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.grid-item h3 {
+    color: #0078D7;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.grid-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.grid-item ul li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #toggle-lang {
+        margin-top: 10px;
+        margin-right: 50px;
+    }
+}
+/* Navbar */
+header {
+    
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Rendre la barre de navigation fixe */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* S'assurer que la navbar est au-dessus du contenu */
+}
+
+/* Section Nos Axes */
+#features {
+    padding-top: 200px; /* Ajoute suffisamment d'espace pour que la section commence sous la navbar */
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Empêcher le contenu de chevaucher la navbar fixe */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('5.JPG'); 
+    background-size: cover; 
+    background-position: top; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    padding-top: 80px; /* Compense la hauteur de la navbar */
+}
+
+.blog h2 {
+    text-align: left;
+    margin-left: 80px;
+    margin-top:200px;
+    color:white;
+}

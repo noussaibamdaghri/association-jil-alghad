@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - Association Jil Alghad</title>
+    <link rel="stylesheet" href="Actualités.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Jil Alghad">
+                <a href="page de garde.html">Jil Alghad</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="page de garde.html">Accueil</a></li>
+                    <li><a href="Nos axes.html">Nos Axes</a></li>
+                    <li><a href="Actualités.html">Actualités</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="toggle-lang">العربية</button>
+        </div>
+    </header>
+
+    <section id="news" class="news-section">
+        <div class="title-with-button">
+            <h1>Marathon AAZIB ABAKIOU</h1>
+            <button class="register-button" onclick="registerForEvent('Marathon AAZIB ABAKIOU')">S'inscrire</button>
+        </div>
+        <p>
+            Nous sommes heureux de vous partager les moments forts du récent marathon organisé. Cet événement a réuni des bénévoles, des membres de notre association, et des citoyens pour célébrer cette grande journée de solidarité et d'engagement pour notre pays.
+        </p>
+        <img src="course.jpg" alt="Moment fort du marathon" class="event-image">
+    
+    
+
+    
+
+    <div class="gallery">
+        <h2>Photos du Marathon</h2>
+        <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <img src="1.jpg" alt="Photo 1 du marathon">
+                <img src="2.jpg" alt="Photo 2 du marathon">
+                <img src="3.jpg" alt="Photo 3 du marathon">
+                <img src="4.jpg" alt="Photo 4 du marathon">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <h2>Vidéo de l'événement</h2>
+        <iframe width="560" height="315" src="VID-20241107-WA0001.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+</main>
+
+<script src="carousel.js"></script>
+</body>
+</html>
+   

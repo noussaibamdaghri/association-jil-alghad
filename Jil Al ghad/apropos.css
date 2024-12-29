@@ -1,0 +1,169 @@
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 12px 10px;
+    color: #fff; /* Texte blanc */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+   
+}
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center; /* Centrer verticalement l'image et le texte */
+}
+
+.logo img {
+    width: 40px; /* Ajuste la taille de l'image */
+    height: auto;
+    margin-right: 10px; /* Espace entre le logo et le texte */
+}
+
+.logo a {
+    text-decoration: none;
+    color: white; /* Texte blanc */
+    font-size: 1.5em; /* Taille initiale */
+    transition: all 0.3s ease;
+}
+
+.logo a:hover {
+    color: #ffecb3; /* Couleur au survol */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none; /* Retire les puces */
+    display: flex; /* Affiche les éléments en ligne */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espace entre les éléments */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffecb3; /* Couleur jaune pâle au survol */
+}
+
+/* Bouton de langue */
+#toggle-lang {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#toggle-lang:hover {
+    background-color: white;
+    color: black;
+}
+/* Styles de base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('5.JPG'); /* Conserve l'image de fond */
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed; /* Fond fixe pour un effet moderne */
+    color: #333; /* Texte par défaut */
+}
+
+
+
+/* Section À propos */
+.about-us {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    padding: 50px 20px;
+    margin: 100px auto 50px;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    color: #2d3a3a; /* Couleur sombre pour le titre */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-us h2 {
+    font-size: 2em;
+    color: #2d3a3a;
+    margin: 30px 0 20px;
+    text-transform: capitalize;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555; /* Texte légèrement grisé */
+    margin-bottom: 20px;
+}
+
+.about-us ul {
+    list-style-type: disc;
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+.about-us ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* Réalisations */
+.values {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.value-item {
+    text-align: center;
+    max-width: 200px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #2d3a3a;
+}
+
+.value-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}

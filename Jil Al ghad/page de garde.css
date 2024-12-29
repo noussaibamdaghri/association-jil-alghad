@@ -1,0 +1,88 @@
+/* Styles de base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('5.JPG'); 
+    background-size: cover; 
+    background-position: top; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%; 
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    padding: 12px 10px;
+    color: #fff; /* Texte blanc pour un bon contraste */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Ajustez la taille de l'image */
+    height: auto;
+    margin-right: 10px; /* Espacement entre l'image et le texte */
+}
+
+/* Lien "Jil Alghad" */
+.logo a {
+    text-decoration: none;
+    color: white; /* Texte en blanc */
+    font-size: 1.5em; /* Taille initiale */
+    padding-bottom: 5px; /* Espacement pour la bordure */
+    display: inline-block; /* Pour appliquer le style de bordure */
+    transition: all 0.3s ease; /* Transition pour l'effet hover */
+}
+
+/* Effet hover sur le lien "Jil Alghad" */
+.logo a:hover {
+    border-bottom: 2px solid #ffecb3; /* Bordure jaune sous le texte */
+    font-size: 1.8em; /* Augmente la taille du texte */
+}
+
+/* Style de la navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ffecb3; /* Couleur du texte au survol */
+    text-decoration: underline;
+}
+
+/* Style du bouton de langue */
+#toggle-lang {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#toggle-lang:hover {
+    text-decoration: underline;
+    font-size: 1.3em; /* Agrandit la taille du texte au survol */
+}

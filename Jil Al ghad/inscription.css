@@ -1,0 +1,162 @@
+/* Style global pour la page */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('5.JPG'); /* Image de fond utilisée dans votre site */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed; /* Fixe l'image de fond */
+    color: #2d3a3a; /* Couleur principale pour le texte */
+}
+
+/* Conteneur principal de la page */
+.registration-page {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour l'effet de profondeur */
+}
+
+/* Titre principal */
+.registration-page h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d3a3a;
+}
+
+/* Style des labels */
+form label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Style des champs de formulaire */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #2d3a3a;
+    outline: none;
+}
+
+/* Bouton de soumission */
+.submit-button {
+    background-color: #2d3a3a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    background-color: #ffecb3;
+    color: #2d3a3a;
+    transform: scale(1.05);
+}
+
+/* Ajustements pour les petits écrans */
+@media (max-width: 768px) {
+    .registration-page {
+        width: 90%;
+        padding: 20px;
+    }
+}
+/* Style de la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 12px 10px;
+    color: #fff; /* Texte blanc */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Lien "Jil Alghad" */
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.logo a:hover {
+    border-bottom: 2px solid #ffecb3;
+    font-size: 1.8em;
+}
+
+/* Style de la navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ffecb3; 
+    text-decoration: underline;
+}
+
+/* Style du bouton de langue */
+#toggle-lang {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#toggle-lang:hover {
+    text-decoration: underline;
+    font-size: 1.3em; 
+}
