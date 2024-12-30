@@ -1,4 +1,4 @@
 exclude:
   - node_modules
-  -jil-alghad-backend
-  -jil-alghad-admin
+  - jil-alghad-backend
+  - jil-alghad-admin
