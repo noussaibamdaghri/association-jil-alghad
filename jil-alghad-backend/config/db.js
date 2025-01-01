@@ -1,8 +1,12 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://127.0.0.1:27017/jil_alghad');
+        await mongoose.connect(process.env.MONGO_URI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
 
         console.log('MongoDB connecté avec succès');
     } catch (error) {
@@ -12,3 +16,4 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
