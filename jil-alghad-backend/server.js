@@ -24,7 +24,7 @@ app.listen(PORT, () => console.log(`Serveur lancé sur le port ${PORT}`));
 const cors = require("cors");
 
 app.use(cors({
-    origin: ["https://jil-alghad-admin-fwe24maci-noussaiba-madaghris-projects.vercel.app", "https://noussaibamdaghri.github.io/association-jil-alghad"],
+    origin: [" https://jil-alghad-admin-3r38aqyu1-noussaiba-mdaghris-projects.vercel.app", "https://noussaibamdaghri.github.io/association-jil-alghad"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
