@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/news';
+const API_URL = 'http://https://association-jil-alghad-su0e.onrender.com/api/news';
 
 export const getNews = () => axios.get(API_URL);
 export const createNews = (data) => axios.post(API_URL, data);
