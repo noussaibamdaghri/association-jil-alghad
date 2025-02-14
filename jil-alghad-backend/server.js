@@ -25,6 +25,10 @@ app.use(cors({
 // Routes
 app.use('/api/news', newsRoutes); // Montez les routes ici
 
+app.get("/", (req, res) => {
+  res.send("API en cours d'exécution...");
+});
+
 // Serveur
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Serveur lancé sur le port ${PORT}`));
